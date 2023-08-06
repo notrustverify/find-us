@@ -9,7 +9,7 @@ Make sure to remove the metadata on your picture before uploading it! You can fi
 
 
 ### Easiest way
-Click [here](https://github.com/notrustverify/find-us/issues/new?template=new_image.yml&title=[New+Image]%3A+) and fill in the form! We'll check your submission ASAP!
+Upload your image on [Pastenym](https://pastenym.ch), copy the link to your file and click [here](https://github.com/notrustverify/find-us/issues/new?template=new_image.yml&title=[New+Image]%3A+) to fill in the form! We'll check your submission ASAP!
 
 
 ### Proper way:

@@ -9,6 +9,7 @@ body:
       description: |
         Please provide the image you want to share to us. You can:
 
+        - Upload your image on [Pastenym](https://pastenym.ch) (or another paste service) and provide the link below, _or_
         - _Attach_ (do not paste) it to this textarea, _or_
         - Provide a link to your image, publicly available on the internet.
     validations:
