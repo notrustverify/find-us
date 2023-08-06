@@ -1,0 +1,39 @@
+name: New image
+description: This form allows you to submit a new image.
+title: "[New Image]: "
+body:
+  - type: textarea
+    id: image
+    attributes:
+      label: Image
+      description: |
+        Please provide the image you want to share to us. You can:
+
+        - _Attach_ (do not paste) it to this textarea, _or_
+        - Provide a link to your image, publicly available on the internet.
+    validations:
+      required: true
+  - type: input
+    id: lat
+    attributes:
+      label: Latitude
+      description: The latitude where the picture was taken.
+      placeholder: 46.98958
+    validations:
+      required: true
+  - type: input
+    id: long
+    attributes:
+      label: Longitude
+      description: The longitude where the picture was taken.
+      placeholder: 6.92926
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Consent
+      description: By submitting this issue, you allow NoTrustVerify to use the image your provide.
+      options:
+        - label: I allow NoTrustVerify to use the information I provided.
+          required: true

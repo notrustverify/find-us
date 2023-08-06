@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/notrustverify/find-us/images.schema.json",
+  "title": "Images",
+  "description": "List of images of NTV stickers and their GPS coordinates",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "title": "An image object",
+    "minItems": 1,
+    "properties": {
+      "id": {
+        "type": "integer",
+        "title": "The id of the picture",
+        "minimum": 0
+      },
+      "lat": {
+        "type": "number",
+        "title": "The latitude where the picture was taken"
+      },
+      "long": {
+        "type": "number",
+        "title": "The longitude where the picture was taken"
+      },
+      "name": {
+        "type": "string",
+        "title": "The name of the image in the 'images' folder"
+      }
+    },
+    "required": [
+        "id",
+        "lat",
+        "long",
+        "name"
+    ]
+  }
+}

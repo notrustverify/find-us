@@ -1,0 +1,9 @@
+html {
+  margin: 0px;
+  height: 100vh;
+}
+
+body, #map {
+  margin: 0px;
+  height: 100%;
+}
