@@ -18,7 +18,7 @@ body:
     attributes:
       label: Latitude
       description: The latitude where the picture was taken.
-      placeholder: 46.98958
+      placeholder: "46.98958"
     validations:
       required: true
   - type: input
@@ -26,7 +26,7 @@ body:
     attributes:
       label: Longitude
       description: The longitude where the picture was taken.
-      placeholder: 6.92926
+      placeholder: "6.92926"
     validations:
       required: true
   - type: checkboxes

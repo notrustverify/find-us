@@ -24,10 +24,10 @@ Click [here](https://github.com/notrustverify/find-us/issues/new?template=new_im
 
    ```json
    {
-    	"id": <your-id>
-       "lat": <the-latitude-of-your-location>
-       "long": <the-longitude-of-your-location>
-       "name": "<the-name-of-your-image>"
+      "id": <your-id>,
+      "lat": <the-latitude-of-your-location>,
+      "long": <the-longitude-of-your-location>,
+      "name": "<the-name-of-your-image>"
    }
    ```
 
