@@ -1,11 +1,21 @@
 function getSrcFromImage(image) {
   let image_text = `Picture of NTV sticker at position ${image.lat}/${image.long}`
-  return `<img src="images/${image.name}" alt="${image_text}" title="${image_text}" />`
+  return `<img class="picture" src="images/${image.name}" alt="${image_text}" title="${image_text}" />`
 }
 
 function loadMap() {
 
   let map = L.map('map').setView([40.11, -0.53], 4);
+
+  var info = L.control();
+
+  info.onAdd = function (map) {
+      this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+      this._div.innerHTML = "Pictures of NTV stickers for you to find!";
+      return this._div;
+  };
+
+  info.addTo(map);
 
   imagesList = []
 
@@ -15,7 +25,7 @@ function loadMap() {
       console.log(`Successfully retrieved ${images.length} images`);
       images.forEach(image => {
         image.marker = L.marker([image.lat, image.long]);
-        image.marker.bindPopup(getSrcFromImage(image), { maxWidth: '30vmax', maxHeight: '30vmax' }); 
+        image.marker.bindPopup(getSrcFromImage(image), { maxWidth: 'auto', maxHeight: 'auto' }); 
         image.marker.addTo(map);
         imagesList.push(image);
       });
